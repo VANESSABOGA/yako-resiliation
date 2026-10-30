@@ -37,6 +37,11 @@ class CampagneResiliation extends Model
         return $this->hasMany(ContratCampagne::class, 'campagne_id');
     }
 
+    //     public function contrats(): HasMany
+    // {
+    //     return $this->hasMany(ContratCampagne::class, 'campagne_id');
+    // }
+
     public function createur(): BelongsTo
     {
         return $this->belongsTo(User::class, 'created_by');
