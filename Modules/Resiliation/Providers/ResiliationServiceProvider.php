@@ -39,6 +39,7 @@ class ResiliationServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 \Modules\Resiliation\Console\Commands\InitCampagneCommand::class,
+                \Modules\Resiliation\Console\Commands\ImportNsilCommand::class,
             ]);
         }
     }
